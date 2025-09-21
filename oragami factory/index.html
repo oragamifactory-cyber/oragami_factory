@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Origami Factory</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf0;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #ffcc00;
+      padding: 30px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+    }
+    h2 {
+      color: #ff6600;
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    tr:hover {
+      background-color: #f9f9f9;
+    }
+    #vip-access {
+      text-align: center;
+      padding: 40px;
+      background-color: #fff3d6;
+      border-top: 2px solid #ffcc00;
+    }
+    #vip-access input {
+      padding: 10px;
+      font-size: 1em;
+      margin-top: 10px;
+    }
+    #vip-access button {
+      padding: 10px 20px;
+      font-size: 1em;
+      margin-top: 10px;
+      background-color: #ffcc00;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Origami Factory</h1>
+  <p>Crafted with Paper. Powered by Imagination.</p>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#currency">Currency</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="menu">
+  <h2>🧾 Menu</h2>
+
+  <h3>🇯🇵 Japanese Stuff</h3>
+  <table>
+    <tr><th>Item</th><th>Price</th></tr>
+    <tr><td>Shuriken (uncolored)</td><td>2₱</td></tr>
+    <tr><td>Katana (uncolored)</td><td>3₱</td></tr>
+    <tr><td>Shuriken (colored)</td><td>3₱</td></tr>
+    <tr><td>Katana (colored)</td><td>4₱</td></tr>
+    <tr><td>Shuriken (keychain)</td><td>3₱</td></tr>
+  </table>
+
+  <h3>✈️ Planes</h3>
+  <table>
+    <tr><th>Item</th><th>Price</th></tr>
+    <tr><td>Classic</td><td>2₱</td></tr>
+    <tr><td>Speedo</td><td>2₱</td></tr>
+    <tr><td>Boomerang</td><td>2₱</td></tr>
+    <tr><td>Fighter Jet</td><td>3₱</td></tr>
+  </table>
+
+  <h3>🐸 Other Stuff</h3>
+  <table>
+    <tr><th>Item</th><th>Price</th></tr>
+    <tr><td>Frog</td><td>2₱</td></tr>
+    <tr><td>Baby Frog</td><td>2₱</td></tr>
+    <tr><td>Folder</td><td>3₱</td></tr>
+    <tr><td>Boat</td><td>3₱</td></tr>
+    <tr><td>Paper Claws (per 5)</td><td>3₱</td></tr>
+    <tr><td>Dakji (per pair)</td><td>3₱</td></tr>
+    <tr><td>Paper Fan</td><td>3₱</td></tr>
+  </table>
+</section>
+
+<section id="currency">
+  <h2>💸 Our Currency</h2>
+  <p>At Origami Factory, paper isn't just the product—it's the payment. We use the Filipino peso sign (₱) to represent our unique paper-based economy. Trade sheets of paper for handcrafted creations. </p>
+</section>
+
+<section id="about">
+  <h2>📖 About Us</h2>
+  <p>Origami Factory started with a single fold and a bold idea: that paper could be more than disposable—it could be delightful. Inspired by Japanese tradition and fueled by modern creativity, we craft everything from ninja stars to fighter jets, all priced in our signature currency: paper.</p>
+</section>
+
+<section id="contact">
+  <h2>📞 Contact Us</h2>
+  <p>Email:oragamifactory@gmail.com</p>
+  <p>Follow us on YouTube for tutorials and behind-the-scenes fun!</p>
+</section>
+
+<section id="vip-access">
+  <h2>🔒 VIP Access</h2>
+  <p>Enter your Platinum Gold Club password to unlock exclusive items:</p>
+  <input type="password" id="vipPassword" placeholder="Enter password">
+  <br><br>
+  <button onclick="checkVIP()">Enter</button>
+</section>
+
+<footer>
+  &copy; 2025 Origami Factory. All folds reserved.
+</footer>
+
+<script>
+  function checkVIP() {
+    const password = document.getElementById('vipPassword').value;
+    if (password === 'platinum_goldclub') {
+      window.location.href = 'vip.html';
+    } else {
+      alert('Incorrect password. Try again.');
+    }
+  }
+</script>
+
+</body>
+</html>
